@@ -100,8 +100,9 @@ section#landing {
 }
 section#landing p {
 	font-size: 15px;
-	line-height: 1.4rem;
+	line-height: 1.6rem;
 	color: var(--text-secondary);
+	margin-bottom: 1rem;
 }
 section#landing p.daily {
 	font-size: 14px;
