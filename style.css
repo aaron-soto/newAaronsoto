@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-primary: #000000;
+	--text-primary: #f1f1f1;
+	--text-secondary: #a8a8a8;
+	font-family: 'Manrope', sans-serif;
+	letter-spacing: .7px;
+}
+
+body {
+	color: var(--text-primary);
+	background-color: var(--bg-primary);
+}
+p {
+	font-weight: 500;
+}
+/* ------------------------------------ */
+/* Navbar */
+/* ------------------------------------ */
+.navbar {
+	height: 60px;
+	border-bottom: 1px solid #ffffff;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+.navbar img {
+	height: 250%;
+	margin-left: -.5rem;
+}
+.toggle-wrapper {
+	height: 100%;
+	width: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ------------------------------------ */
+/* Menu Toggle */
+/* ------------------------------------ */
+.toggle {
+	display: block;
+	cursor: pointer;
+}
+.toggle span {
+	display: block;
+	background: #fff;
+	width: 42px;
+	height: 2px;
+	border-radius: 3px;
+	transition: 0.25s margin 0.25s, 0.25s transform;
+}
+.toggle span:nth-child(1) {
+	margin-bottom: 9px;
+}
+.toggle span:nth-child(3) {
+	margin-top: 9px;
+}
+.toggle.active span {
+	transition: 0.25s margin, 0.25s transform 0.25s;
+}
+.toggle.active span:nth-child(1) {
+	margin-top: 9px;
+	margin-bottom: -2px;
+}
+.toggle.active span:nth-child(1),
+.toggle.active span:nth-child(2) {
+	transform: rotate(45deg);
+}
+.toggle.active span:nth-child(3) {
+	margin-top: -2px;
+	transform: rotate(135deg);
+}
+section {
+	padding: 2rem 1rem;
+}
+/* ------------------------------------ */
+/* Landing Section */
+/* ------------------------------------ */
+section#landing {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+section#landing p {
+	font-size: 16px;
+	line-height: 1.4rem;
+	color: var(--text-secondary);
+}
+section#landing p.daily {
+	font-size: 14px;
+	letter-spacing: 1.2px;
+	color: var(--text-secondary);
+}
+section#landing h1 {
+	font-size: 2.5rem;
+	margin-bottom: .7rem;
+}
+section#landing h2 {
+	margin-bottom: .7rem;
+}
