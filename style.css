@@ -52,6 +52,9 @@ p {
 .toggle {
 	display: block;
 	cursor: pointer;
+	width: 42px;
+	height: 42px;
+	margin-top: calc(60px - 42px);
 }
 .toggle span {
 	display: block;
@@ -96,7 +99,7 @@ section#landing {
 	text-align: left;
 }
 section#landing p {
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.4rem;
 	color: var(--text-secondary);
 }
